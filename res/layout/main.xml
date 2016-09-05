@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/full_gb"
+              android:layout_gravity="center"
+              android:paddingTop="150dp"
+        >
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:textSize="25sp"
+        android:hint="请输入账号"
+        android:layout_gravity="center"/>
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:textSize="25sp"
+            android:hint="请输入密码"
+            android:layout_gravity="center"
+            />
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign"
+            android:textSize="25sp"
+            android:text="注册"
+            android:layout_gravity="center"
+            />
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:textSize="25sp"
+            android:text="登录"
+            android:layout_gravity="center"
+            />
+
+</LinearLayout>
+
