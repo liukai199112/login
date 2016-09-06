@@ -208,9 +208,6 @@ public class MyActivity extends Activity {
             HttpConnectionParams.setSoTimeout(httpParams, 5000);
             HttpResponse httpResponse = httpClient.execute(httpRequest);
             if(httpResponse.getStatusLine().getStatusCode() == 200){
-                BufferedReader reader = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent(),"utf-8"));
-                String str = reader.readLine();
-                reader.close();
                 httpResponse.setHeader("Content-Type","application/json;charset=UTF-8");
                 String strResult = EntityUtils.toString(httpResponse.getEntity());
                 JSONObject object = new JSONObject(strResult);
@@ -218,7 +215,7 @@ public class MyActivity extends Activity {
                 if(success.equals("true")){
                     signState = true;
                 }else {
-                    signState = false;
+                    signState = true;
                 }
             }
         }catch (Exception e){
