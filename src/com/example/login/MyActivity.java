@@ -215,7 +215,7 @@ public class MyActivity extends Activity {
                 if(success.equals("true")){
                     signState = true;
                 }else {
-                    signState = true;
+                    signState = false;
                 }
             }
         }catch (Exception e){
